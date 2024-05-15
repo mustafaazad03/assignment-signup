@@ -1,9 +1,10 @@
+import { Col, Row } from "antd";
 import Image from "next/image";
 
 export default function Home() {
 	return (
 		<>
-			<div className="grid grid-cols-2 min-h-full h-[100vh] w-full">
+			<Row className="grid grid-cols-2 min-h-full h-[100vh] w-full">
 				<Image
 					className="h-full object-cover grayscale w-full"
 					src="/signup.jpeg"
@@ -11,7 +12,7 @@ export default function Home() {
 					height={600}
 					alt="signup"
 				/>
-				<div className="flex flex-col mx-8 mt-24 sm:px-6 lg:flex-none lg:px-10 xl:px-12">
+				<Col className="flex flex-col mx-8 mt-24 sm:px-6 lg:flex-none lg:px-10 xl:px-12">
 					<div className="w-full">
 						<div>
 							<Image
@@ -120,8 +121,8 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+				</Col>
+			</Row>
 		</>
 	);
 }
